@@ -13,7 +13,6 @@ int main() {
         return 1;
     }
 
-    // Read data from the input file and calculate average
     vector<int> numbers;
     int num;
     while (inputFile >> num) {
@@ -21,10 +20,8 @@ int main() {
     }
     double average = accumulate(numbers.begin(), numbers.end(), 0.0) / numbers.size();
 
-    // Write the average to the output file
     outputFile << "Average: " << average << endl;
 
-    // Close files
     inputFile.close();
     outputFile.close();
 
